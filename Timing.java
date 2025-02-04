@@ -9,15 +9,12 @@ public class Timing {
     System.out.println("Input filename: ");
     String filename = in.next();
     Scanner fin = new Scanner(new File(filename));
-    int lines = 0;
     int j = 0;
-    while(fin.hasNextLine()){
-      arr1[j] = fin.nextInt();
+    while(fin.hasNextLine()){}
       j++;
-      lines++;
-      
     }
-    int[] arr1 = new int[lines];
+    int[] arr = new int[j];
+  
     // generate random numbers for array
     for (int i = 0; i < SIZE; i++) {
       arr[i] = rand.nextInt();
