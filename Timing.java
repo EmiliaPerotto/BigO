@@ -32,8 +32,10 @@ public class Timing {
     for (int p = 0; p < 10; p++) {
       // System.out.println("p");
       //int target = rand.nextInt();
+      int low = arr[0];
+      int high = arr[arr.length - 1];
     long start = System.currentTimeMillis();
-    Util.selectionSort(arr);
+    Util.merge(arr, low, high);
     long end = System.currentTimeMillis();
     long diff = end - start;
     System.out.println("Size: " + arr1[i] + " trial: " + (p + 1) + " diff: " + diff);
